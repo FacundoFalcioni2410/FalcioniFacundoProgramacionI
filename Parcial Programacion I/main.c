@@ -56,6 +56,7 @@ int main()
 
     mostrarNotebooks(lista, TAM);
 
+    return 0;
 }
 
 float aplicarDescuento(float precio)
