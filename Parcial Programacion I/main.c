@@ -8,7 +8,7 @@
 typedef struct
 {
     int id;
-    char procesador[5];
+    char procesador[20];
     char marca[20];
     float precio;
 
@@ -20,6 +20,9 @@ float aplicarDescuento(float precio);
 int contarCaracteres(char string[], char caracter);
 void ordernarNotebooks(eNotebook x[], int tam);
 
+void mostrarNotebook(eNotebook x);
+void mostrarNotebooks(eNotebook x[], int tam);
+
 int main()
 {
 
@@ -30,7 +33,7 @@ int main()
     char caracter;
     int cantidad;
 
-    eNotebook lista[3] = { {1000,"i5","Intel",20000}, {1001, "Ryzen 5","AMD",15000}, {1002, "i3","Intel",10000} };
+    eNotebook lista[TAM] = { {1000,"i5","Intel",20000}, {1001, "Ryzen 5","AMD",15000}, {1002, "i3","Intel",10000} };
 
     printf("Ingrese una cadena de caracteres:");
     gets(cadena);
